@@ -1,0 +1,21 @@
+Char[]와 String은 모두 다수의 문자를 저장할 수 있지만,
+Char는 struct, String은 class이기 때문에 변환이 필요
+
+-생성자를 이용하여 char[]를 string으로 변환하기
+char[] chars = {'H', 'e', 'l', 'l', 'o'};
+string str = new String(chars);
+
+-메소드를 이용하여 char[]를 string으로 변환하기
+String.Join(String, String[], Int32, Int32)
+            seperator, String[], startIndex, count(갯수)
+            startIndex 및 count를 사용하지 않으면 배열 내의 모든 문자열을 이어 붙일 수 있다.
+            
+char[] chars = {'H', 'e', 'l', 'l', 'o'};
+string sep = ", ";
+string str = string.Join(sep, chars);
+Console.WriteLine(str);
+-출력
+H,e,l,l,o
+
+char[] chars = {'H', 'e', 'l', 'l', 'o'};
+string str = string.Concat(chars);
