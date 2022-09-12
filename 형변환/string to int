@@ -1,0 +1,11 @@
+string n = "1234";
+ 
+ 
+1. int outValue = Convert.ToInt32(n);
+ 
+2. int outValue = int.Parse(n);
+ 
+ 
+
+3. int outValue;
+   int.TryParse(n, out outValue);
