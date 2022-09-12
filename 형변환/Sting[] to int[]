@@ -1,0 +1,6 @@
+자주 쓰이는 방식
+Array.ConvertAll(s, num => int.Parse(num));
+
+문자열 s를 공백으로 나누고 int[]로 바꿈
+s.Split(' ').Select(int.Parse).ToArray();
+
